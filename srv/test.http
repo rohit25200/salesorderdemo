@@ -1,0 +1,56 @@
+GET http://localhost:4004/Catalogservice/POs
+
+###
+GET http://localhost:4004/Catalogservice/POs?$top=5
+
+### send data
+PUT   http://localhost:4004/my/Update/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+Content-Type: application/json;IEEE754Compatible=true
+
+{
+	"ID": "02BD2137-0890-1EEA-A6C2-BB55C19787FB",
+	"nameFirst": "ROHIT",
+
+	"nameLast": "Patil"
+
+
+}
+### patch
+PATCH  http://localhost:4004/Catalogservice/EmployeeSet/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+Content-Type: application/json;IEEE754Compatible=true
+
+ {
+      "salaryAmount":"455665.5",
+	  "Currency_code":"INR"
+    }
+
+### 
+POST  http://localhost:4004/Catalogservice/POs(74867AD200E41EDBA5D8B0C98DC28052)/Catalogservice.boost
+Content-Type: application/json;IEEE754Compatible=true
+
+{
+	
+}
+
+###
+GET   http://localhost:4004/Catalogservice/POs
+
+
+###
+POST   http://localhost:4004/Catalogservice/EmployeeSet
+Content-Type: application/json
+
+{
+	"ID": "02BD2137-0890-1EEA-A6C2-BB55C19B88FB",
+	"nameFirst": "SAachin",
+
+	"nameLast": "Spring",
+	"nameInitials": null,
+	"sex": "M",
+	"language": "E",
+
+
+	"loginName": "SPRINGS"
+
+
+}
